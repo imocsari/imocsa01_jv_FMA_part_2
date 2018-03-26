@@ -1,0 +1,45 @@
+<html>
+<head>
+<script type="text/javascript" src="index.js">
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<p> <strong>How old are you?</strong>
+    <br />
+  <div id="rates">
+    1-25<input checked type="radio" id="1" name="op1" data-score="0" >
+    26-40<input type="radio" id="2" name="op1" data-score="5">
+    41-60<input type="radio" id="3" name="op1" data-score="8">
+    60+<input type="radio" id="4" name="op1" data-score="10">
+  </div>
+  </p>
+<p> <strong>What is your BMI?</strong>
+    <br />
+    0-25<input checked type="radio" name="op2" data-score="0">
+    26-30<input type="radio" name="op2" data-score="0">
+    31-35<input type="radio" name="op2" data-score="9">
+    35+<input type="radio" name="op2" data-score="10">
+    <br>
+</p>
+<p> <strong>What is your BMI?</strong>
+    <br />
+    No<input checked type="radio" name="op3" data-score="0">
+    Grandparent<input type="radio" name="op3" data-score="7">
+    Sibling<input type="radio" name="op3" data-score="15">
+    Parent<input type="radio" name="op3" data-score="15">
+    <br>
+</p>
+<p> <strong>How would you describe your diet?</strong>
+    <br />
+    Low sugar<input checked type="radio" name="op4" data-score="0">
+    Normal sugar<input type="radio" name="op4" data-score="0">
+    Quite high sugar<input type="radio" name="op4" data-score="7">
+    High sugar<input type="radio" name="op4" data-score="10">
+    <br>
+</p>
+<input type='button' value='Calculate' onClick='Submit()' />
+<br />
+<div class="hidden" id="result" >Click me to change my HTML content (innerHTML).</div>
+</body>
+</html>
