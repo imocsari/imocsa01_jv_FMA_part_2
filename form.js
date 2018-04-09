@@ -23,10 +23,10 @@ function validateForm() {
         document.getElementById("errEmail").style.display="inline";
         return false;
     }
-    var regexPhone = /^\d{11}$/;
-    var phone = document.getElementById("telephone").value
-    if (phone === "" || !regexPhone.test(phone)) {
+    var regexPhone = /^(\d{11})?$/;
+    var phone = document.getElementById("telephone").value;
+      if (!regexPhone.test(phone)) {
         document.getElementById("errPhone").style.display="inline";
         return false;
-    }
+      }
   }

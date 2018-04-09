@@ -8,9 +8,9 @@
 <div id=”wrapper”>
 <form id="myForm" onsubmit="return validateForm()">
   <br>First Name:<br>
-  <input type="text" id="fname"  placeholder="John" autofocus><span id="errfName" class="error">*Please Enter a valid First Name</span>
+  <input type="text" id="fname"  placeholder="Enter first name" autofocus><span id="errfName" class="error">*Please Enter a valid First Name</span>
   <br>Last Name:<br>
-  <input type="text" id="lname"  placeholder="Collopy"><span id="errlName" class="error">*Please Enter a valid Last Name</span><br>
+  <input type="text" id="lname"  placeholder="Enter last name"><span id="errlName" class="error">*Please Enter a valid Last Name</span><br>
   <select name="prefix">
     <option selected="selected">Mr</option>
     <option>Ms</option>
@@ -20,12 +20,14 @@
   </select><br>
   <br>Health Authority Number:<br>
   <div tooltip="bla bla">
-    <input type="text" id="han" placeholder="ZHA346783"><span id="errHan" class="error">*Please Enter a valid Health Authority Number</span>
+      <!-- image source from https://www.jotform.com -->
+    <img src="https://shots.jotform.com/kade/Screenshots/blue_question_mark.png"  style="cursor:pointer;" title="If you do not know your ZHA number, please contact your GP" height="20px">
+    <input type="text" id="han" placeholder="Enter ZHA number"><span id="errHan" class="error">*Please Enter a valid Health Authority Number</span>
   </div>
   <br>Email:<br>
   <input type="text" id="email" placeholder="example@example.com"><span id="errEmail" class="error">*Please Enter a valid email address</span>
   <br>Telephone Number:<br>
-  <input type="text" id="telephone" placeholder="07784981276"><span id="errPhone" class="error">*Please Enter a valid phone number</span><br>
+  <input type="text" id="telephone" placeholder=" etc. 07784981276"><span id="errPhone" class="error">*Please Enter a valid phone number</span><br>
   <input type="submit" value="Submit">
 </form>
 </head>
