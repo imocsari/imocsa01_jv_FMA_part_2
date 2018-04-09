@@ -31,8 +31,8 @@ function riskFactor() {
 } else if (getResult() >= 16 && getResult() <= 25) {
     return("Your results show that you currently have a medium risk of developing diabetes. For more information on your risk factors, and what to do about them, please visit our diabetes advice website at http://www.zha.org.zd. ")
 } else {
-    var str = " Contact form "
-    return("Your results show that you currently have a HIGH risk of developing diabetes. [Your main risk factors" + countHighRisk() +  "your " + (highRisk().join(", ")).bold() + ".] We advise that you contact the Health Authority to discuss your risk factors as soon as you can. Please fill in our" + str.link("form.html") +  "and a member of the Health Authority Diabetes Team will be in contact with you.")
+    var str = "Contact form"
+    return("Your results show that you currently have a HIGH risk of developing diabetes. [Your main risk factors" + countHighRisk() +  "your " + (highRisk().join(", ")).bold() + ".] We advise that you contact the Health Authority to discuss your risk factors as soon as you can. Please fill in our " + str.link("form.html") +  " and a member of the Health Authority Diabetes Team will be in contact with you.")
   }
 }
 

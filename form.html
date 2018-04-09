@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-<form name="myForm" onsubmit="return validateForm()">
-  First Name: <input type="text" name="fname"><br>
-  Last Name: <input type="text" name="lname"><br>
+<script type="text/javascript" src="form.js">
+</script>
+<link rel="stylesheet" href="styles.css">
+<body>
+<div id=”wrapper”>
+<form id="myForm" onsubmit="return validateForm()">
+  <br>First Name:<br>
+  <input type="text" id="fname"  placeholder="John" autofocus><span id="errfName" class="error">*Please Enter a valid First Name</span>
+  <br>Last Name:<br>
+  <input type="text" id="lname"  placeholder="Collopy"><span id="errlName" class="error">*Please Enter a valid Last Name</span><br>
   <select name="prefix">
     <option selected="selected">Mr</option>
     <option>Ms</option>
     <option>Mrs</option>
     <option>Dr</option>
   </select><br>
-  Health Authority Number: <input type="text" name="han"><br>
-  Email: <input type="text" name="email"><br>
-  Telephone Number: <input type="text" name="phone"><br>
+  <br>Health Authority Number:<br>
+  <div tooltip="bla bla">
+    <input type="text" id="han" placeholder="ZHA346783"><span id="errHan" class="error">*Please Enter a valid Health Authority Number</span>
+  </div>
+  <br>Email:<br>
+  <input type="text" id="email" placeholder="example@example.com"><span id="errEmail" class="error">*Please Enter a valid email address</span>
+  <br>Telephone Number:<br>
+  <input type="text" id="telephone" placeholder="07784981276"><span id="errPhone" class="error">*Please Enter a valid phone number</span><br>
   <input type="submit" value="Submit">
 </form>
 </head>
