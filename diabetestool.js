@@ -32,7 +32,7 @@ function riskFactor() {
     return("Your results show that you currently have a medium risk of developing diabetes. For more information on your risk factors, and what to do about them, please visit our diabetes advice website at http://www.zha.org.zd. ")
 } else {
     var str = "Contact form"
-    return("Your results show that you currently have a HIGH risk of developing diabetes. [Your main risk factors" + countHighRisk() +  "your " + (highRisk().slice(0,(highRisk().length -1)).join(", ")).bold() + " and your " + (highRisk().slice(-1).join("")).bold() + ".] We advise that you contact the Health Authority to discuss your risk factors as soon as you can. Please fill in our " + str.link("form.html") +  " and a member of the Health Authority Diabetes Team will be in contact with you.")
+    return("Your results show that you currently have a HIGH risk of developing diabetes. [Your main risk factors" + countHighRisk() +  "your " + (highRisk().slice(0,(highRisk().length -1)).join(", ")).bold() + " and your " + (highRisk().slice(-1).join("")).bold() + ".] We advise that you contact the Health Authority to discuss your risk factors as soon as you can. Please fill in our " + str.link("contactform.html") +  " and a member of the Health Authority Diabetes Team will be in contact with you.")
   }
 }
 
