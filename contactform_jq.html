@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- Contactform for Javascript, FMA, imocsa01, Birkceck, University of London -->
+<html lang="en">
+    <head>
+      <title>Contact Form</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+        <script src="contactform_jq.js"></script>
+
+        <link href="contactform_jq.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <form id="validation" action="validation">
+            <fieldset>
+                <div>
+                    <label id="fname-label" for="fname" >First name:</label>
+                    <input id="fname" name="fname" type="text" placeholder="Enter first name"/>
+                </div>
+                <div>
+                    <label id="lname-label" for="lname">Last name:</label>
+                    <input id="lname" name="lname" type="text" placeholder="Enter last name" />
+                </div>
+                <div>
+                  <select id="title-label" name="title" title="Please select title!">
+                    <option value="0">Mr</option>
+                    <option value="1">Ms.</option>
+                    <option value="2">Mrs</option>
+                    <option value="3">Miss</option>
+                    <option value="4">Master</option>
+                  </select>
+                </div>
+                <div>
+                    <label id="han-label" for="han">Health Authory Number: </label>
+                    <input id="han" name="han" type="text" />
+                </div>
+                <div>
+                    <label id="email-label" for="email">Email: </label>
+                    <input id="email" name="email" type="text" />
+                </div>
+                <div>
+                    <label id="phone-label" for="phone">Telephone: </label>
+                    <input id="phone" name="phone" type="text" />
+                </div>
+            </fieldset>
+            <input id="submit" name="submit" type="submit" value="Validate" />
+        </form>
+    </body>
+</html>
